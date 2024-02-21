@@ -1,0 +1,285 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Song+Myung&display=swap" rel="stylesheet">
+	<title>Gayatri-Developer Portfolio</title>
+	<style>
+	/*Body css*/
+	    *{
+		margin:0px 0px;
+		padding:0;
+		}
+	    body{
+		font-family:'Poppins','curcive';
+		background-color:rgb(68,47,122);
+		color:white;
+		}
+		/*Left section Css like Img and Title*/
+		.left{
+		 margin:0px 20px;
+		 font-size:1.8rem;
+		}
+		/*ID photo as Logo*/
+		.left img{
+		width:5%;
+		padding:3px 3px;
+		margin:10px 3px;
+		border-radius:20px;
+		}
+		/*hover Changes*/
+		.left img:hover{
+		width:8%;
+		border:2px solid purple;
+        top:70px;
+		border-radius:20px;
+		}
+		/*first section for image and content and button*/
+		.firstSn{
+		 display:flex;
+		 justify-content:space-around;
+		 margin:30px 0px;
+		 top:35px;
+		}
+		/*Right side navigation bar css*/
+		nav{
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		height:60px;
+		background-color:rgb(71,46,135);
+		}
+		nav ul{
+		display:flex;
+		justify-content:center;  <!--content in one line-->
+		}
+		nav ul li{
+		 list-style:none;  
+		 margin:12px 25px;   <!--avoid overlapping-->
+		 padding:5px 10 px;
+		 font-size:18px;
+		}
+		nav ul li a{
+		text-decoration:none;
+		color:white;
+		}
+		nav ul li a:hover,.Right li a.active{
+		color:rgb(86,155,168);
+		font-size:1.3rem;
+		}
+		/*End Header 
+		   Middle part 1
+		first section content div CSS*/
+		.firstSn div{
+		 width:37%;
+		 margin:40px 0px;
+		 top:px;
+		}
+		.leftSn{
+		 font-size:3rem;
+		 /*margin:75px;-->
+		 background-color:rgb(118, 215, 196);*/
+		}
+		/*name colour change*/
+		.colour{
+		color:rgb(72,247,236);
+		}
+		/*left section button css*/
+		.leftSn .btn{
+		padding:10px 5px;
+		margin:2px 2px;
+		background-color:white;
+		border:2px solid rgb(45,33,84);
+		border-radius:5px;
+		font-size:12px;
+		color:white;
+		background-color:rgb(46,34,85);
+		}
+		/*button hover*/
+		.leftSn .btn a:hover{
+		text-decoration:none;
+		color:white;
+		color:rgb(67,52,120);
+		font-size:1.3rem;
+		}
+		/*right section for image*/
+		.rightSn{
+		 <!--background-color:rgb(118, 215, 196);-->
+		}
+		.rightSn img{
+		  width:95%;
+		  margin:0px 0px;
+		}
+		/*Line between two section 2section*/
+		main hr{
+		 border:0px;
+		 background:rgb(247,220,111);
+		 height:1.5px;
+		 margin:30px 120px;
+		}
+		/*2 section for experience*/
+		.secondSn{
+		  margin:30px 120px;
+		  height:70vh;
+		}
+		/*header*/
+		.secondSn h1{
+		 font-size:1.3rem;
+		 <!--margin:30px 120px;-->
+		}
+		/*box for line*/
+		.secondSn .box{
+		 background-color:white;
+		 width:70vw;
+		 height:2px;
+		 margin:10px;
+		 display:flex;
+		 
+		}
+	    .secondSn .vertical{
+		  height:75px;
+		  width:1px;
+		  background-color:white;
+		  margin:0px 150px
+		}
+		/*What I have Done so far*/
+		.gray-txt{
+		color=rgb(86,83,115);
+		}
+		/*experience title css*/
+		.vtitle{
+		width:200px;
+		position:relative;
+		top:85px;
+		}
+		.vtitle a{
+		text-decoration:none;
+		color:white;
+		}
+		/*experience decribtion Css*/
+		.describe{
+		width:120px;
+		position:relative;
+		top:100px;
+		font-size:15px;
+		color:rgb(77,146,235);
+		margin:0px 20px;
+		justify-content:center;
+		}
+		/*End middle start footer*/
+		footer{
+		background-color:rgb(39,33,82);
+		height:180;
+		}
+		/*footer class css*/
+		.footer{
+		display:flex;
+		padding:17px 20px;
+		justify-content:space-evenly;
+		}
+		/*footer ul class css*/
+		.footer ul{
+		 list-style:none;
+		}
+		.footer >div{
+		width:223px;
+		}
+		/*copyright part css*/
+		.text-cnt{
+		text-align:center;
+		}
+	</style>
+</head>
+<body>
+    <header>
+	<!--to keep header stick bootstrap-->
+	<div class="fixed-top">
+	   <nav>
+	     <div class="left">
+		 <img src="c:\Users\91883\Downloads\IMG20231112190235.jpg"><b>Gayatri's Portfolio</b></div>
+		 <div class="Right">
+		   <ul>
+		    <li><a href="#" class="active"><b>Home</b></a></li>
+			<li><a href="#"><b>About</b></a></li>
+			<!--linked profile given for eduaction and project-->
+			<li><a href="https://www.linkedin.com/in/gayatri-gore-686486233/"><b>Eduaction</b></a></li>
+		    <li><a href="https://www.linkedin.com/in/gayatri-gore-686486233/"><b>Projects</b></a></li>
+			<li><a href="$9503727299*"><b>Contact</b></a></li>
+		  </ul>
+		  
+		 </div>
+	   </nav>
+	 </div>  
+	</header>
+
+	<main>
+	  <section class="firstSn">
+	    <div class="leftSn">Hello! My name is <span class="colour">Gayatri</span> and I am a Web Developer
+		  
+		<div class="buttons">
+		<button class="btn"><a href="https://drive.google.com/file/d/11Gg30WIfzm3eUFY-9jcuq67Br53isHLH/view?usp=drive_link">Download Resume</a></button>
+		<button class="btn"><a href="https://github.com/GSGore">Visit Github</a></button>
+		</div>
+		</div>
+		
+	    <div class="rightSn">
+		<img src="https://png.pngtree.com/png-vector/20220724/ourmid/pngtree-beauty-female-programmer-with-laptop-at-workplace-png-image_6058798.png">
+		</div>
+	  </section>
+	  <hr>
+	  <section class="secondSn">
+	  <span class="gray-txt">What I have Done so far</span>
+	  <!--in h1 tag bootstrap new function is used-->
+	   <h1>Work Experience <span class="badge bg-secondary">New</span></h1>
+		 <div class="box">
+				<div class="vertical">
+				<div class="vtitle"><b>Android Development Intern    (Jan 24- Feb 24)</b></div>
+				 <div class="describe"> Android development internship where I learned the fundamentals of Android development using the Kotlin programming language.</div>
+				</div>
+				<div class="vertical">
+				 <div class="vtitle"><b>Zscalar cloud security Intern   (Jan 24- Feb 24)</b></div>
+				 <div class="describe">Cloud security virtual internship in which I have completed all the certifications related to it.</div>
+			     </div>
+				 <div class="vertical">
+				 <div class="vtitle"><b>Data Analysis Intern  <a href="https://drive.google.com/file/d/1C0CmgfV987-Tfi6JZPjPUA3T0CysuXBw/view?usp=drive_link">(Dec 23- Jan 24)*</a></b></div>
+				 <!--At the time there is certificate link-->
+				 <div class="describe">This virtual internship project focused on conducting an analysis of an E-commerce website utilizing Power BI software.</div>
+				</div>
+         </div>
+	  </section>
+	</main>
+	<footer>
+	<div class="footer">
+	   <div class="ft1"><h2>Gayatri's Portfolio</h2></div>
+       <div class="ft2">
+	   <ul>
+	   <a href="https://www.linkedin.com/in/gayatri-gore-686486233/"><img src="c:\Users\91883\Desktop\link.png" width:"60" height="60"></a>
+	   </ul>
+	   </div>
+	   <div class="ft3">
+	    <ul>
+	   <a href="https://github.com/GSGore"><img src="c:\Users\91883\Desktop\git.png" width:"60" height="60"></a>
+	   </ul>
+	   </div>
+	   <div class="ft4">
+	    <ul>
+	   <a href="https://twitter.com/GayatriGore16"><img src="c:\Users\91883\Desktop\twitter.jpg" width:"60" height="60"></a>
+	   </ul>
+	   </div>
+	   <div class="ft5">
+	   <ul>
+	   <a href="https://t.me/+919503727299"><img src="c:\Users\91883\Desktop\telegram.png" width:"60" height="60"></a>
+	   </ul>
+	   </div>
+       </div>
+	   <div class="text-cnt"><em>
+	    copyright&#169; www.gayatriportfolio.com | All Rights Reserved</em>
+	   </div>
+	</footer>
+</body>
+</html>
